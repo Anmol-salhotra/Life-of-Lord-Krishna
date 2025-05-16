@@ -1,1 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ open: false }">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sri Krishna Janmashtami</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/alpinejs" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
+  <style>
+    body {
+      font-family: 'Lucida Calligraphy', cursive;
+    }
+    section {
+      padding: 2rem 1rem;
+    }
+    .overlay {
+      background: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(10px);
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-yellow-100 to-orange-200 relative">
 
+  <!-- Particle Background -->
+  <div id="tsparticles" class="absolute w-full h-full -z-10"></div>
+
+  <!-- Header -->
+  <header class="bg-yellow-300 text-center py-6 shadow-md">
+    <h1 class="text-4xl font-bold text-red-800">Sri Krishna Janmashtami</h1>
+    <p class="text-lg mt-2 text-gray-700">Celebrate the divine birth of Lord Krishna</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md sticky top-0 z-10">
+    <ul class="flex justify-center space-x-4 p-4 text-blue-800 font-semibold">
+      <li><a href="#life">Life</a></li>
+      <li><a href="#teachings">Teachings</a></li>
+      <li><a href="#gita">Bhagavad Gita</a></li>
+      <li><a href="#students">Advice</a></li>
+      <li><a href="#pastimes">Pastimes</a></li>
+      <li><a href="#attributes">Attributes</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sections -->
+  <section id="life" class="bg-white shadow-md rounded-lg max-w-4xl mx-auto my-6 p-6">
+    <h2 class="text-3xl font-bold text-purple-700 mb-4">Life of Lord Krishna</h2>
+    <p>Lord Krishna was born in a prison cell in Mathura, ending King Kansa’s tyranny. He spent his childhood in Gokul, performing many divine acts. From lifting Govardhan Hill to playful leelas with Radha and gopis, Krishna's life is a symbol of divinity, joy, and justice.</p>
+  </section>
+
+  <section id="teachings" class="bg-yellow-50 shadow-md rounded-lg max-w-4xl mx-auto my-6 p-6">
+    <h2 class="text-3xl font-bold text-green-700 mb-4">Krishna's Teachings</h2>
+    <ul class="list-disc list-inside space-y-2">
+      <li>Do your duty without attachment to the results.</li>
+      <li>Control your mind and desires.</li>
+      <li>Live with love, truth, and compassion.</li>
+      <li>Always stand up for righteousness (Dharma).</li>
+    </ul>
+  </section>
+
+  <section id="gita" class="bg-orange-100 shadow-md rounded-lg max-w-4xl mx-auto my-6 p-6">
+    <h2 class="text-3xl font-bold text-blue-800 mb-4">Bhagavad Gita Wisdom</h2>
+    <blockquote class="italic text-gray-700">"You have the right to work, but not to the fruits of work."</blockquote>
+    <p class="mt-4">Krishna’s conversation with Arjuna on the battlefield of Kurukshetra forms the Bhagavad Gita. It teaches spiritual wisdom, duty, self-control, and the importance of devotion and surrender to God.</p>
+  </section>
+
+  <section id="students" class="bg-white shadow-md rounded-lg max-w-4xl mx-auto my-6 p-6">
+    <h2 class="text-3xl font-bold text-indigo-700 mb-4">Advice to Students</h2>
+    <ul class="list-disc list-inside space-y-2">
+      <li>Focus on learning, not just marks.</li>
+      <li>Have faith in yourself and God.</li>
+      <li>Develop discipline, courage, and a positive attitude.</li>
+      <li>Serve others selflessly and respect elders.</li>
+    </ul>
+  </section>
+
+  <section id="pastimes" class="bg-yellow-100 shadow-md rounded-lg max-w-4xl mx-auto my-6 p-6">
+    <h2 class="text-3xl font-bold text-pink-700 mb-4">Divine Pastimes</h2>
+    <p>From stealing butter, dancing with the gopis, to showing the universe in his mouth—Krishna’s leelas are full of joy, mischief, and divinity. These pastimes inspire devotion and celebrate his divine nature.</p>
+  </section>
+
+  <section id="attributes" class="bg-orange-50 shadow-md rounded-lg max-w-4xl mx-auto my-6 p-6">
+    <h2 class="text-3xl font-bold text-red-700 mb-4">Attributes of Krishna</h2>
+    <ul class="list-disc list-inside space-y-2">
+      <li>Compassionate and loving</li>
+      <li>Playful yet wise</li>
+      <li>Protector of Dharma</li>
+      <li>Charioteer, guide, and God</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-yellow-300 text-center p-4 mt-6 text-red-800 font-semibold">
+    Jai Shri Krishna | Happy Janmashtami 2025
+  </footer>
+
+  <!-- Particles Script -->
+  <script>
+    tsParticles.load("tsparticles", {
+      fullScreen: { enable: true },
+      particles: {
+        number: { value: 50 },
+        size: { value: 3 },
+        move: { enable: true, speed: 1 },
+        opacity: { value: 0.5 },
+        color: { value: ["#facc15", "#f97316", "#ef4444"] },
+        shape: { type: "circle" }
+      },
+      background: { color: "transparent" }
+    });
+  </script>
+</body>
+  </html>
